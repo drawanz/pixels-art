@@ -2,8 +2,24 @@
     border: black solid 1px;
     width: 50px;
     height: 50px;
+    display: inline-flex;
     
 }
 #color-palette {
-    border: purple solid 5px;
+    /* border: purple solid 5px; */
+    width: 210px;
+    height: 50px;
+}
+#pixel-board {
+    width: 210px;
+    height: 40px;
+    /* border: black solid 1px; */
+    
+}
+.pixel {
+    width: 40px;
+    height: 40px;
+    border: solid 1px;    
+    display: inline-flex;
+    border: black solid 1px;
 }
