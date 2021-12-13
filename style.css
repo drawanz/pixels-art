@@ -11,11 +11,11 @@
 }
 
 #pixel-board {
-    position: absolute;
     top: 170px;
     height: 40px;
     width: 210px;
     line-height: 0%;
+    margin-top: 20px;
 }
 
 .pixel {
@@ -24,3 +24,4 @@
     width: 40px;
     height: 40px;
 }
+

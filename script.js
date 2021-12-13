@@ -27,7 +27,6 @@ function iniciandoCorPreta () {
     
     divPixel.addEventListener('click', function (event){        
         event.target.style.backgroundColor = "black";
-        console.log(event.target);
     })
 }
 
@@ -35,8 +34,7 @@ iniciandoCorPreta ()
 
 function removendoClasse () {
     for (let i=0; i < arrayCores.length; i +=1){
-          coresPaletta[i].classList.remove("selected");
-          console.log("teste");
+        coresPaletta[i].classList.remove("selected");
     }
 }
 
@@ -53,12 +51,19 @@ function pintandoPixels () {
     })        
 }
 
-
+function limpandoQuadro (){
+    let button = document.getElementById("clear-board")
+    button.addEventListener('click', function() {
+        let todasDivsPixelBoard = document.querySelectorAll('.pixel');
+            for ( let i = 0; i < 25; i +=1){
+            todasDivsPixelBoard[i].style.backgroundColor = "white";
+            }
+    })
+}
 
 window.onload = function () {
     criandoPalettas ();
     criandoPixels (25);
-    //iniciandoCorPreta ();
-    pintandoPixels ()
-    //removendoClasse();
+    pintandoPixels ();
+    limpandoQuadro ();
 }
